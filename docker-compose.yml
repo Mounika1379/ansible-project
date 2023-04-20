@@ -1,0 +1,14 @@
+version: '3'
+services:
+  movie:
+    image: mounika13792468/ppmovie:v1
+    ports:
+      - "8000:80"
+    deploy:
+      replicas: 2
+  train:
+    image: mounika13792468/pptrain:v1
+    ports:
+      - "8001:80"
+    deploy:
+      replicas: 2
